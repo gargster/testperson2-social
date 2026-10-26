@@ -115,7 +115,13 @@ function renderFeed() {
   if (!currentFeed) return;
 
   postList.replaceChildren();
-  const { posts, likesByTarget, repliesByTarget, follows } = currentFeed.indexed;
+  const {
+    posts,
+    likesByTarget,
+    repliesByTarget,
+    boostsByTarget,
+    follows,
+  } = currentFeed.indexed;
   const followedKeys = new Set(
     follows
       .filter((follow) => follow.author === currentFeed.profile.publicKey)
@@ -143,7 +149,11 @@ function renderFeed() {
   feedStatus.textContent = "";
   for (const post of visiblePosts) {
     postList.append(
-      renderPost(post, { likesByTarget, repliesByTarget }, currentFeed.profiles)
+      renderPost(
+        post,
+        { likesByTarget, repliesByTarget, boostsByTarget },
+        currentFeed.profiles
+      )
     );
   }
 }
