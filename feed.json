@@ -21,6 +21,15 @@
   },
   "actions": [
     {
+      "id": "boost-testperson1.social-003",
+      "type": "boost",
+      "author": "ed25519:189c39f67de223e961d8fd9c075d2945b3062ab7480f33386956cd81c32ace37",
+      "created": "2026-10-26T06:36:23.326176Z",
+      "target": "post-testperson3.social-001",
+      "targetHandle": "testperson3.social",
+      "signature": "LpbHWppExXDtV7NASHGk7EVe+DukZPEhfdIc5FY5o5jbmitjaNsCY/kpurEY45PIdN4zk9uwmAMFAj/mR4EdAQ=="
+    },
+    {
       "id": "boost-testperson2.social-004",
       "type": "boost",
       "author": "ed25519:57873577004887bfa9a0b8f51b301cb6416c04808f111bae13e0e48fec11fee3",
@@ -39,6 +48,15 @@
       "signature": "5e5zU4JHi1woe79d9N5IgziXZ6OdXigySBfMiMkGouAIWUvYLvzhx6PQ2h3Y//M6Tcw+28yVrtAscVLWMN4uAA=="
     },
     {
+      "id": "boost-testperson3.social-006",
+      "type": "boost",
+      "author": "ed25519:d58c64edefc76f350720d80a9db27794cd3520b90b2aed90cdb6fa1111efa838",
+      "created": "2026-10-26T20:18:20.289893Z",
+      "target": "post-testperson1.social-001",
+      "targetHandle": "testperson1.social",
+      "signature": "7ujvQb0sdX6UYZY1/2/EpyyWWERAeROIRh04GV+xj062i7LYARWWIdBX52fKmbyviBJng2BUT7JRM0ctk8jqBw=="
+    },
+    {
       "id": "follow-testperson1.social-002",
       "type": "follow",
       "author": "ed25519:189c39f67de223e961d8fd9c075d2945b3062ab7480f33386956cd81c32ace37",
@@ -53,6 +71,22 @@
       "created": "2026-09-30T09:41:55.977970Z",
       "target": "ed25519:189c39f67de223e961d8fd9c075d2945b3062ab7480f33386956cd81c32ace37",
       "signature": "Jhn4HWHeLGX5IC32FNAcLlMk2oBw/bU3maI9CUayBRm6t3FBnbeKkF/TNGnrZCBI02oNJ18zDrFCEmNwhLufCQ=="
+    },
+    {
+      "id": "follow-testperson2.social-006",
+      "type": "follow",
+      "author": "ed25519:57873577004887bfa9a0b8f51b301cb6416c04808f111bae13e0e48fec11fee3",
+      "created": "2026-10-26T20:22:31.627905Z",
+      "target": "ed25519:d58c64edefc76f350720d80a9db27794cd3520b90b2aed90cdb6fa1111efa838",
+      "signature": "sVsHpmh949aSQfoBZlPgk7bmsRLHpcaGp95AyeOhHYyrk6HvKjOYcoDI3z666oeXPJoup5dEj+//HLcj/oWbAw=="
+    },
+    {
+      "id": "follow-testperson3.social-002",
+      "type": "follow",
+      "author": "ed25519:d58c64edefc76f350720d80a9db27794cd3520b90b2aed90cdb6fa1111efa838",
+      "created": "2026-10-26T20:17:09.245610Z",
+      "target": "ed25519:57873577004887bfa9a0b8f51b301cb6416c04808f111bae13e0e48fec11fee3",
+      "signature": "u+Uk3YGNdx4yp6A1ZHaZsXHSrUcCPLOqnA1R90v5PfScC8GmHVmgzm2y9VBGCdlKitO4Ua6tKroaG15T9i1pDw=="
     },
     {
       "id": "like-testperson2.social-002",
@@ -91,12 +125,25 @@
     }
   ],
   "boostsByTarget": {
+    "post-testperson3.social-001": {
+      "count": 1,
+      "boosters": [
+        {
+          "author": "ed25519:189c39f67de223e961d8fd9c075d2945b3062ab7480f33386956cd81c32ace37",
+          "count": 1
+        }
+      ]
+    },
     "post-testperson1.social-001": {
-      "count": 2,
+      "count": 3,
       "boosters": [
         {
           "author": "ed25519:57873577004887bfa9a0b8f51b301cb6416c04808f111bae13e0e48fec11fee3",
           "count": 2
+        },
+        {
+          "author": "ed25519:d58c64edefc76f350720d80a9db27794cd3520b90b2aed90cdb6fa1111efa838",
+          "count": 1
         }
       ]
     }
